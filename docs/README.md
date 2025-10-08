@@ -104,6 +104,17 @@ Follow this order to learn Helm charts from scratch:
    - Template debugging
    - **Type:** Troubleshooting guide
 
+13. **[NEXT-STEPS.md](NEXT-STEPS.md)** 🆕 ⭐
+   - Updates & rollbacks
+   - NGINX Ingress (public access)
+   - Secrets management
+   - Monitoring (Prometheus/Grafana)
+   - CI/CD pipelines
+   - Production readiness
+   - Security hardening
+   - **Type:** Advanced guide
+   - **Time:** Reference as needed
+
 ## 🚀 Quick Links
 
 ### By Use Case
@@ -138,6 +149,10 @@ Follow this order to learn Helm charts from scratch:
 **I want to use make commands:**
 - Read [MAKEFILE-GUIDE.md](MAKEFILE-GUIDE.md)
 
+**I want to go to production / add advanced features:** ⭐
+- Read [NEXT-STEPS.md](NEXT-STEPS.md) 🆕
+- Topics: Updates, Rollbacks, Ingress, Monitoring, CI/CD, Security
+
 ### By Skill Level
 
 **Beginner:**
@@ -152,8 +167,9 @@ Follow this order to learn Helm charts from scratch:
 
 **Advanced:**
 1. [../helm_charts/backend/STRUCTURE.md](../helm_charts/backend/STRUCTURE.md) - Advanced sections
-2. Create your own charts (follow the pattern)
-3. Production deployment strategies
+2. [NEXT-STEPS.md](NEXT-STEPS.md) - Production & advanced features 🆕
+3. Create your own charts (follow the pattern)
+4. Implement monitoring, CI/CD, Ingress
 
 ## 📋 Document Summaries
 
@@ -281,6 +297,21 @@ Complete task breakdown for implementing frontend Helm deployment from scratch.
 - Documentation requirements
 - Time estimates per task
 
+### NEXT-STEPS.md 🆕 ⭐
+Advanced topics and production-ready features to implement after basic deployment.
+
+**Key Topics:**
+- Managing updates and rollbacks
+- NGINX Ingress for public access
+- Secrets management (External Secrets, Sealed Secrets)
+- Monitoring with Prometheus & Grafana
+- CI/CD pipelines (GitHub Actions, ArgoCD)
+- Production readiness checklist
+- Performance optimization
+- Security hardening
+- Multi-environment setup
+- Advanced Helm features
+
 ## 🎯 Recommended Reading Order
 
 ### For First-Time Users (Backend Only)
@@ -375,10 +406,12 @@ Complete task breakdown for implementing frontend Helm deployment from scratch.
 
 After completing these guides:
 1. ✅ Frontend deployment (completed!) 🆕
-2. Set up Ingress for external access
-3. Add monitoring (Prometheus/Grafana)
-4. Implement CI/CD pipelines
-5. Explore advanced Helm features (dependencies, hooks)
+2. **Read [NEXT-STEPS.md](NEXT-STEPS.md) for:** ⭐
+   - Set up Ingress for external access
+   - Add monitoring (Prometheus/Grafana)
+   - Implement CI/CD pipelines
+   - Explore advanced Helm features (dependencies, hooks)
+   - Production readiness & security
 
 ---
 
