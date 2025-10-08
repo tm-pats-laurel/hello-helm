@@ -7,10 +7,10 @@
 - [X] **Task 2**: Create values.yaml (10 min)
 
 ### Phase 2: Kubernetes Templates (20 min)
-- [ ] **Task 3**: Create _helpers.tpl (5 min)
-- [ ] **Task 4**: Create deployment.yaml (10 min)
-- [ ] **Task 5**: Create service.yaml (3 min)
-- [ ] **Task 6**: Create serviceaccount.yaml (2 min)
+- [X] **Task 3**: Create _helpers.tpl (5 min)
+- [X] **Task 4**: Create deployment.yaml (10 min)
+- [X] **Task 5**: Create service.yaml (3 min)
+- [X] **Task 6**: Create serviceaccount.yaml (2 min)
 
 ### Phase 3: Optional Templates (2 min)
 - [ ] Copy ingress.yaml, hpa.yaml, httproute.yaml from backend

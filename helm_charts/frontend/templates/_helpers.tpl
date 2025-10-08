@@ -7,8 +7,6 @@ Expand the name of the chart.
 
 {{/*
 Create a default fully qualified app name.
-We truncate at 63 chars because some Kubernetes name fields are limited to this (by the DNS naming spec).
-If release name contains chart name it will be used as a full name.
 */}}
 {{- define "frontend.fullname" -}}
 {{- if .Values.fullnameOverride }}
@@ -58,5 +56,16 @@ Create the name of the service account to use
 {{- default (include "frontend.fullname" .) .Values.serviceAccount.name }}
 {{- else }}
 {{- default "default" .Values.serviceAccount.name }}
+{{- end }}
+{{- end }}
+
+{{/*
+Backend URL - constructs the backend URL from release name or custom URL
+*/}}
+{{- define "frontend.backendUrl" -}}
+{{- if .Values.backend.customUrl }}
+{{- .Values.backend.customUrl }}
+{{- else }}
+{{- printf "http://%s:%d" .Values.backend.releaseName (int .Values.backend.port) }}
 {{- end }}
 {{- end }}
