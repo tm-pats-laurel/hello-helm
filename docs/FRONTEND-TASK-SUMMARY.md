@@ -13,11 +13,11 @@
 - [X] **Task 6**: Create serviceaccount.yaml (2 min)
 
 ### Phase 3: Optional Templates (2 min)
-- [ ] Copy ingress.yaml, hpa.yaml, httproute.yaml from backend
+- [X] Copy ingress.yaml, hpa.yaml, httproute.yaml from backend
 
 ### Phase 4: Support Files (6 min)
-- [ ] **Task 7**: Create .helmignore (1 min)
-- [ ] **Task 8**: Create NOTES.txt (5 min)
+- [X] **Task 7**: Create .helmignore (1 min)
+- [X] **Task 8**: Create NOTES.txt (5 min)
 
 ### Phase 5: Deployment Automation (35 min)
 - [ ] **Task 9**: Create deploy-local.sh (15 min)
