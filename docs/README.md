@@ -15,28 +15,43 @@ Follow this order to learn Helm charts from scratch:
    - **Time:** 30-45 minutes read
 
 2. **[../helm_charts/backend/QUICK-START.md](../helm_charts/backend/QUICK-START.md)**
-   - Deploy in 5 minutes
+   - Deploy backend in 5 minutes
    - Perfect for first-time deployment
    - Hands-on quick start
    - **Time:** 5-10 minutes
 
-3. **[DEPLOYMENT.md](DEPLOYMENT.md)**
-   - Comprehensive deployment guide
+3. **[../helm_charts/frontend/QUICK-START.md](../helm_charts/frontend/QUICK-START.md)** 🆕
+   - Deploy frontend in 5 minutes
+   - Full-stack application
+   - Backend-Frontend integration
+   - **Time:** 5-10 minutes
+
+4. **[DEPLOYMENT.md](DEPLOYMENT.md)**
+   - Comprehensive backend deployment guide
    - Step-by-step instructions
    - All Kubernetes flavors (minikube/kind/Docker Desktop)
    - Troubleshooting tips
    - **Time:** 20-30 minutes read
 
+4b. **[FULL-STACK-DEPLOYMENT-GUIDE.md](FULL-STACK-DEPLOYMENT-GUIDE.md)** 🆕
+   - Complete full-stack deployment (Backend + Frontend)
+   - Quick start in 5 minutes
+   - Step-by-step with verification
+   - Testing full-stack flow
+   - Advanced operations
+   - **Time:** 15-20 minutes read
+   - **Type:** Practical guide
+
 ### 📖 Understanding the Architecture
 
-4. **[DOCKER-COMPOSE-VS-HELM.md](DOCKER-COMPOSE-VS-HELM.md)**
+5. **[DOCKER-COMPOSE-VS-HELM.md](DOCKER-COMPOSE-VS-HELM.md)**
    - Compare Docker Compose to Kubernetes/Helm
    - Concept mapping and translation
    - When to use what
    - Side-by-side examples
    - **Time:** 20 minutes read
 
-5. **[../helm_charts/backend/STRUCTURE.md](../helm_charts/backend/STRUCTURE.md)**
+6. **[../helm_charts/backend/STRUCTURE.md](../helm_charts/backend/STRUCTURE.md)**
    - Deep dive into Helm chart structure
    - How templates work
    - Values flow and template functions
@@ -45,20 +60,28 @@ Follow this order to learn Helm charts from scratch:
 
 ### 📘 Reference Documentation
 
-6. **[../helm_charts/backend/README.md](../helm_charts/backend/README.md)**
+7. **[../helm_charts/backend/README.md](../helm_charts/backend/README.md)**
    - Complete backend chart documentation
    - Configuration options
    - Customization examples
    - Security considerations
    - **Type:** Reference guide
 
-7. **[MAKEFILE-GUIDE.md](MAKEFILE-GUIDE.md)**
+8. **[../helm_charts/frontend/README.md](../helm_charts/frontend/README.md)** 🆕
+   - Complete frontend chart documentation
+   - Backend connection configuration
+   - BFF pattern explanation
+   - Deployment options
+   - **Type:** Reference guide
+
+9. **[MAKEFILE-GUIDE.md](MAKEFILE-GUIDE.md)**
    - Makefile commands reference
-   - Common workflows
+   - Common workflows (backend + frontend)
+   - Full-stack deployment
    - Troubleshooting tips
    - **Type:** Command reference
 
-8. **[HELM-CHART-WALKTHROUGH.md](HELM-CHART-WALKTHROUGH.md)** 🆕
+10. **[HELM-CHART-WALKTHROUGH.md](HELM-CHART-WALKTHROUGH.md)** 🆕
    - Complete chart creation walkthrough
    - File-by-file explanation
    - Why we kept certain files
@@ -66,7 +89,7 @@ Follow this order to learn Helm charts from scratch:
    - **Type:** Educational deep-dive
    - **Time:** 45-60 minutes read
 
-9. **[FRONTEND-DEPLOYMENT-PLAN.md](FRONTEND-DEPLOYMENT-PLAN.md)** 🆕
+11. **[FRONTEND-DEPLOYMENT-PLAN.md](FRONTEND-DEPLOYMENT-PLAN.md)** 🆕
    - Complete frontend deployment task list
    - Step-by-step process (18 tasks)
    - Backend URL configuration
@@ -75,7 +98,7 @@ Follow this order to learn Helm charts from scratch:
    - **Type:** Implementation plan
    - **Time:** 3-4 hours total
 
-10. **[../helm_charts/backend/TROUBLESHOOTING-NOTES.md](../helm_charts/backend/TROUBLESHOOTING-NOTES.md)**
+12. **[../helm_charts/backend/TROUBLESHOOTING-NOTES.md](../helm_charts/backend/TROUBLESHOOTING-NOTES.md)**
    - Common issues and solutions
    - Deployment errors
    - Template debugging
@@ -86,16 +109,20 @@ Follow this order to learn Helm charts from scratch:
 ### By Use Case
 
 **I want to deploy quickly:**
-- Start with [../helm_charts/backend/QUICK-START.md](../helm_charts/backend/QUICK-START.md)
+- Backend: [../helm_charts/backend/QUICK-START.md](../helm_charts/backend/QUICK-START.md)
+- Frontend: [../helm_charts/frontend/QUICK-START.md](../helm_charts/frontend/QUICK-START.md) 🆕
+- Full Stack: [FULL-STACK-DEPLOYMENT-GUIDE.md](FULL-STACK-DEPLOYMENT-GUIDE.md) 🆕 or run `make helm-fullstack`
 
 **I want to understand Helm:**
 - Start with [HELM-LEARNING-GUIDE.md](HELM-LEARNING-GUIDE.md)
 
 **I want to understand how the chart was built:**
-- Read [HELM-CHART-WALKTHROUGH.md](HELM-CHART-WALKTHROUGH.md) 🆕
+- Backend: [HELM-CHART-WALKTHROUGH.md](HELM-CHART-WALKTHROUGH.md) 🆕
+- Frontend: [FRONTEND-DEPLOYMENT-PLAN.md](FRONTEND-DEPLOYMENT-PLAN.md) 🆕
 
 **I want to deploy the frontend:**
-- Follow [FRONTEND-DEPLOYMENT-PLAN.md](FRONTEND-DEPLOYMENT-PLAN.md) 🆕
+- Quick: [../helm_charts/frontend/QUICK-START.md](../helm_charts/frontend/QUICK-START.md) 🆕
+- Detailed: [FRONTEND-DEPLOYMENT-PLAN.md](FRONTEND-DEPLOYMENT-PLAN.md) 🆕
 
 **I'm coming from Docker Compose:**
 - Read [DOCKER-COMPOSE-VS-HELM.md](DOCKER-COMPOSE-VS-HELM.md)
@@ -141,7 +168,7 @@ Your complete guide to learning Helm charts. Covers everything from beginner con
 - Troubleshooting
 
 ### DEPLOYMENT.md
-Step-by-step guide for deploying your application to Kubernetes with Helm. Covers all major Kubernetes distributions and includes detailed troubleshooting.
+Step-by-step guide for deploying backend to Kubernetes with Helm. Covers all major Kubernetes distributions and includes detailed troubleshooting.
 
 **Key Topics:**
 - Prerequisites
@@ -151,6 +178,20 @@ Step-by-step guide for deploying your application to Kubernetes with Helm. Cover
 - Accessing services
 - Making changes
 - Troubleshooting
+
+### FULL-STACK-DEPLOYMENT-GUIDE.md 🆕
+Complete guide for deploying the entire full-stack application (Frontend + Backend + Database) with Helm.
+
+**Key Topics:**
+- Architecture overview
+- Quick start (5 minutes)
+- Step-by-step backend deployment
+- Step-by-step frontend deployment
+- Verification and testing
+- Full-stack flow testing
+- Advanced operations
+- Troubleshooting full-stack issues
+- Make command reference
 
 ### DOCKER-COMPOSE-VS-HELM.md
 Bridges your Docker Compose knowledge to Helm/Kubernetes. Shows how compose concepts map to Kubernetes resources.
@@ -210,30 +251,74 @@ Solutions to common issues encountered during deployment.
 - Testing checklist
 - Debug commands
 
+### helm_charts/frontend/README.md 🆕
+Complete documentation for the frontend Helm chart. Configuration reference, backend connection setup, and BFF pattern explanation.
+
+**Key Topics:**
+- Frontend chart components
+- Backend URL configuration
+- BFF (Backend-for-Frontend) pattern
+- Configuration options
+- Troubleshooting
+
+### helm_charts/frontend/QUICK-START.md 🆕
+Deploy frontend application in 5 minutes. Full-stack integration with backend.
+
+**Key Topics:**
+- Prerequisites (backend deployed)
+- 3-step deployment
+- Backend connection
+- Testing full-stack
+- Make commands
+
+### FRONTEND-DEPLOYMENT-PLAN.md 🆕
+Complete task breakdown for implementing frontend Helm deployment from scratch.
+
+**Key Topics:**
+- 7 phases, 18 tasks
+- Backend URL injection
+- Make command integration
+- Documentation requirements
+- Time estimates per task
+
 ## 🎯 Recommended Reading Order
 
-### For First-Time Users
+### For First-Time Users (Backend Only)
 
 ```
 1. HELM-LEARNING-GUIDE.md (overview)
    ↓
-2. QUICK-START.md (hands-on)
+2. backend/QUICK-START.md (hands-on)
    ↓
 3. DOCKER-COMPOSE-VS-HELM.md (concepts)
    ↓
-4. STRUCTURE.md (understanding)
+4. backend/STRUCTURE.md (understanding)
    ↓
-5. README.md (reference)
+5. backend/README.md (reference)
+```
+
+### For Full-Stack Deployment
+
+```
+1. HELM-LEARNING-GUIDE.md (learn Helm)
+   ↓
+2. backend/QUICK-START.md (deploy backend)
+   ↓
+3. frontend/QUICK-START.md (deploy frontend) 🆕
+   ↓
+4. Test full-stack integration
+   ↓
+5. Read frontend/README.md (BFF pattern)
 ```
 
 ### For Experienced Users
 
 ```
-1. QUICK-START.md (quick deploy)
+1. Run: make helm-fullstack (quick deploy)
    ↓
-2. STRUCTURE.md (architecture)
+2. Read: STRUCTURE.md (architecture)
    ↓
-3. README.md (configuration)
+3. Read: backend/README.md + frontend/README.md (configuration)
 ```
 
 ## 🔍 Search by Topic
@@ -289,11 +374,11 @@ Solutions to common issues encountered during deployment.
 ## 🔄 Keep Learning
 
 After completing these guides:
-1. Apply the patterns to frontend deployment
+1. ✅ Frontend deployment (completed!) 🆕
 2. Set up Ingress for external access
 3. Add monitoring (Prometheus/Grafana)
 4. Implement CI/CD pipelines
-5. Explore advanced Helm features
+5. Explore advanced Helm features (dependencies, hooks)
 
 ---
 
