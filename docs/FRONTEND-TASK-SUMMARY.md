@@ -20,11 +20,11 @@
 - [X] **Task 8**: Create NOTES.txt (5 min)
 
 ### Phase 5: Deployment Automation (35 min)
-- [ ] **Task 9**: Create deploy-local.sh (15 min)
-- [ ] **Task 10**: Make executable (1 min)
+- [X] **Task 9**: Create deploy-local.sh (15 min)
+- [X] **Task 10**: Make executable (1 min)
 
 ### Phase 6: Makefile (20 min)
-- [ ] **Task 11**: Add frontend commands to Makefile (20 min)
+- [X] **Task 11**: Add frontend commands to Makefile (20 min)
 
 ### Phase 7: Documentation (1h 25min)
 - [ ] **Task 12**: Create frontend README (30 min)
