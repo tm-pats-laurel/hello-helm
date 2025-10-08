@@ -66,7 +66,16 @@ Follow this order to learn Helm charts from scratch:
    - **Type:** Educational deep-dive
    - **Time:** 45-60 minutes read
 
-9. **[../helm_charts/backend/TROUBLESHOOTING-NOTES.md](../helm_charts/backend/TROUBLESHOOTING-NOTES.md)**
+9. **[FRONTEND-DEPLOYMENT-PLAN.md](FRONTEND-DEPLOYMENT-PLAN.md)** 🆕
+   - Complete frontend deployment task list
+   - Step-by-step process (18 tasks)
+   - Backend URL configuration
+   - Make commands for frontend
+   - Time estimates and validation
+   - **Type:** Implementation plan
+   - **Time:** 3-4 hours total
+
+10. **[../helm_charts/backend/TROUBLESHOOTING-NOTES.md](../helm_charts/backend/TROUBLESHOOTING-NOTES.md)**
    - Common issues and solutions
    - Deployment errors
    - Template debugging
@@ -84,6 +93,9 @@ Follow this order to learn Helm charts from scratch:
 
 **I want to understand how the chart was built:**
 - Read [HELM-CHART-WALKTHROUGH.md](HELM-CHART-WALKTHROUGH.md) 🆕
+
+**I want to deploy the frontend:**
+- Follow [FRONTEND-DEPLOYMENT-PLAN.md](FRONTEND-DEPLOYMENT-PLAN.md) 🆕
 
 **I'm coming from Docker Compose:**
 - Read [DOCKER-COMPOSE-VS-HELM.md](DOCKER-COMPOSE-VS-HELM.md)
