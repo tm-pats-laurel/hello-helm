@@ -1,0 +1,72 @@
+# Example values file for local development
+# Install with: helm install my-backend backend/ -f values-local.yaml
+
+# Backend application configuration
+replicaCount: 1
+
+image:
+  repository: backend-app
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+service:
+  type: ClusterIP
+  port: 8000
+
+# Lower resources for local development
+resources:
+  limits:
+    cpu: 300m
+    memory: 256Mi
+  requests:
+    cpu: 50m
+    memory: 128Mi
+
+# Health checks
+livenessProbe:
+  httpGet:
+    path: /health
+    port: http
+  initialDelaySeconds: 30
+  periodSeconds: 10
+
+readinessProbe:
+  httpGet:
+    path: /health
+    port: http
+  initialDelaySeconds: 10
+  periodSeconds: 5
+
+# PostgreSQL for local development
+postgres:
+  enabled: true
+  
+  image:
+    repository: postgres
+    tag: "15-alpine"
+    pullPolicy: IfNotPresent
+  
+  auth:
+    database: appdb
+    username: appuser
+    password: supersecret  # It's okay for local dev
+  
+  persistence:
+    enabled: true
+    size: 1Gi
+    storageClass: ""  # Uses default (works with minikube/kind)
+  
+  resources:
+    limits:
+      cpu: 300m
+      memory: 256Mi
+    requests:
+      cpu: 50m
+      memory: 128Mi
+
+# Environment variables
+# Note: Database connection variables (DB_HOST, DB_NAME, DB_USER, DB_PASSWORD) 
+# are automatically configured when postgres.enabled=true
+env:
+  PYTHONUNBUFFERED: "1"
+

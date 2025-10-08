@@ -1,0 +1,21 @@
+{{- if .Values.postgres.enabled }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Release.Name }}-postgres
+  labels:
+    {{- include "backend.labels" . | nindent 4 }}
+    app.kubernetes.io/component: database
+spec:
+  type: {{ .Values.postgres.service.type }}
+  ports:
+  - port: {{ .Values.postgres.service.port }}
+    targetPort: postgres
+    protocol: TCP
+    name: postgres
+  selector:
+    app.kubernetes.io/name: {{ include "backend.name" . }}-postgres
+    app.kubernetes.io/instance: {{ .Release.Name }}
+  clusterIP: None  # Headless service for StatefulSet
+{{- end }}
+

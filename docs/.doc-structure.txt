@@ -1,0 +1,51 @@
+Documentation Structure
+=====================
+
+Project Root
+├── README.md                              # Main project README
+├── Makefile                               # Make commands
+│
+├── docs/                                  # 📁 MAIN DOCUMENTATION
+│   ├── README.md                         # 📖 Documentation index (START HERE)
+│   ├── HELM-LEARNING-GUIDE.md            # 🎓 Complete learning guide
+│   ├── DEPLOYMENT.md                     # 🚀 Deployment instructions
+│   ├── DOCKER-COMPOSE-VS-HELM.md         # 🔄 Concept comparison
+│   └── MAKEFILE-GUIDE.md                 # ⚙️  Makefile commands reference
+│
+├── helm_charts/backend/                   # Helm chart with its docs
+│   ├── QUICK-START.md                    # ⚡ 5-minute quick start
+│   ├── README.md                         # 📘 Chart documentation
+│   ├── STRUCTURE.md                      # 🏗️  Chart structure deep-dive
+│   ├── TROUBLESHOOTING-NOTES.md          # 🔧 Troubleshooting guide
+│   ├── Chart.yaml
+│   ├── values.yaml
+│   ├── values-local.yaml
+│   ├── deploy-local.sh
+│   └── templates/
+│       ├── deployment.yaml
+│       ├── service.yaml
+│       ├── postgres-statefulset.yaml
+│       ├── postgres-service.yaml
+│       └── postgres-secret.yaml
+│
+├── backend/
+│   └── README.md                         # Backend component README
+│
+└── frontend/
+    └── README.md                         # Frontend component README
+
+Cross-References
+================
+All markdown files have been updated with correct relative paths to reference each other.
+
+Documentation Index
+===================
+Start with: docs/README.md
+
+This file provides:
+- Complete documentation navigation
+- Learning paths by skill level
+- Quick links by use case
+- Search by topic
+- Document summaries
+
